@@ -11,7 +11,7 @@ rl.on("line",(line) => {
 })
 
 rl.on("close", () => {
- 
+ maxVal();
 })
 
 function maxVal() {
@@ -29,9 +29,9 @@ function maxVal() {
         
         let max = arr[0];
         
-        for(let num of arr) {
-            if(num > max) {
-                max = num;
+        for(let i=0; i<N; i++) {
+            if(arr[i] > max) {
+                max = arr[i];
             }
         }
         console.log(max)

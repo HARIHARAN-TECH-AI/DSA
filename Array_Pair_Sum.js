@@ -10,3 +10,4 @@ for(let i=0; i<arr.length; i++) {
     }
     set.add(arr[i])
 }
+console.log(set)
